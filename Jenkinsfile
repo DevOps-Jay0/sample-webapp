@@ -62,10 +62,10 @@ pipeline {
                 sh '''
                 ssh ec2-user@52.88.200.182 "
 
-                    docker pull ${IMAGE_NAME}:latest &&
+                    docker pull ${IMAGE_NAME}:latest 
 
-                    docker stop sample-webapp || true &&
-                    docker rm sample-webapp || true &&
+                    docker stop sample-webapp || true 
+                    docker rm sample-webapp || true 
 
                     docker run -d \
                         --name sample-webapp \
