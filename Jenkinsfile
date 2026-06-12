@@ -60,7 +60,7 @@ pipeline {
             steps {
 
                 sh '''
-                ssh ec2-user@52.88.200.182 "
+                ssh ec2-user@172.31.41.113 "
 
                     docker pull ${IMAGE_NAME}:latest 
 
