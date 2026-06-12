@@ -58,7 +58,7 @@ pipeline {
 
         stage('Deploy to Docker Server') {
             steps {
-i
+
                 sh '''
                 ssh ec2-user@52.88.200.182"
 
